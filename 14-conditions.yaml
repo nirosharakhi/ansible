@@ -6,9 +6,9 @@
   tasks:
     - name: print number is less  to 100
       ansible.builtin.debug:
-          msg: "Given number{{NUMBER}} is less than or equl to 100"
-          when: NUMBER>100
+          msg: "Given number{{ NUMBER }} is less than or equl to 100"
+      when: NUMBER<100
     - name: print number is  greater to 100
       ansible.builtin.debug:
-        msg: "Given number{{NUMBER}} is greater than or equl to 100"
-        when: NUMBER>100
+        msg: "Given number{{ NUMBER }} is greater than or equl to 100"
+      when: NUMBER>100
