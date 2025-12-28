@@ -1,0 +1,19 @@
+- name: ansible datatypes
+  hosts: local
+  connection: local
+  vars: 
+    DURATION: 120
+    COURSE: Devsecops
+    IS_LIVE: true
+    TOOLS:
+      - linux
+      - shell
+      - ansible
+    CONCEPTS:
+      CI: Jenkins
+      SCRIPTING: "Shell, ansible,terraform,python"
+    tasks:
+      - name: print course information
+        ansible.builtin.debug:
+          msg: "course is {{COURSE}}, tools are {{TOOLS}}, concepts are {{CONCEPTS}}
+          "
