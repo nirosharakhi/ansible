@@ -1,7 +1,8 @@
 - name: ansible datatypes
   hosts: local
   connection: local
-  vars: 
+
+  vars:
     DURATION: 120
     COURSE: Devsecops
     IS_LIVE: true
@@ -11,8 +12,9 @@
       - ansible
     CONCEPTS:
       CI: Jenkins
-      SCRIPTING: "Shell, ansible,terraform,python"
-    TASKS:
-      - name: print course information
-        ansible.builtin.debug:
-          msg: "course is {{COURSE}}, tools are {{TOOLS}}, concepts are {{CONCEPTS}}"
+      SCRIPTING: "Shell, ansible, terraform, python"
+
+  tasks:
+    - name: print course information
+      ansible.builtin.debug:
+        msg: "course is {{ COURSE }}, tools are {{ TOOLS }}, concepts are {{ CONCEPTS }}"
