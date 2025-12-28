@@ -15,5 +15,4 @@
     TASKS:
       - name: print course information
         ansible.builtin.debug:
-          msg: "course is {{COURSE}}, tools are {{TOOLS}}, concepts are {{CONCEPTS}}
-          "
+          msg: "course is {{COURSE}}, tools are {{TOOLS}}, concepts are {{CONCEPTS}}"
