@@ -9,8 +9,8 @@
     - name: GREETING
       prompt: Please enter GREETING
       private: false
-  #tasks:
-    #- name: print the greetiing
+  tasks:
+    - name: print the greetiing
     #  vars:
       #  GREETING: "Hello from Task"
       ansible.builtin.debug:
