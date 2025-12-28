@@ -12,7 +12,7 @@
     CONCEPTS:
       CI: Jenkins
       SCRIPTING: "Shell, ansible,terraform,python"
-    tasks:
+    TASKS:
       - name: print course information
         ansible.builtin.debug:
           msg: "course is {{COURSE}}, tools are {{TOOLS}}, concepts are {{CONCEPTS}}
