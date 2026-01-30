@@ -26,3 +26,13 @@
           - { 'key': 'trainer', 'value': 'sivakumar'}
       ansible.builtin.debug:
         msg: "courseinfo: {{ course | items2dict }}"
+    - name: convert to uppercase
+      vars:
+        name: nirosha
+      ansible.builtin.debug:
+        msg: "hello {{name | upper }}"
+    - name : check ip add is valid or not 
+      vars:
+        ip: 300.567.980.789
+      ansible.builtin.debug:
+        msg: "{{ ip | ansible.utils.ipaddr }}"
