@@ -9,4 +9,4 @@
         msg: "hello, {{ person | default ('Ramesh')}}"
     - name: print names
       ansible.builtin.debug:
-        msg: "hello {{ person | split(',') }}"
+        msg: "hello {{ persons | split(',') }}"
